@@ -55,10 +55,6 @@
           }
 
 //  Display a user's favourite language.  In some cases, a user might not have a favourite language at all so I accounted for that.  
-
-debugger
-
-
           if (favouritLanguages.length == 0) {
             $scope.answer = "This user does not have a favourite language"
           } else if (favouritLanguages.length == 1) {
