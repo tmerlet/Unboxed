@@ -1,0 +1,52 @@
+body  {
+  background-color: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+/* I'm aware I'm cutting corners by using Outline.  If I had more time I would have done this differently.  I also assumed that the border went all the way around rather than just top and bottom.  */
+.rectangle {
+  border: solid white 1px;
+  padding: 8px;
+  outline: solid #f7f7f7 1px ;
+  width: 330px;
+}
+
+.thumbnail {
+  height: 49px;
+  width: 48px;
+  border-radius: 3px;
+}
+
+.inline {
+  display: inline-block; 
+  vertical-align: top;
+}
+
+.topright {
+  vertical-align: top;
+  text-align: right;
+  float: right;
+} 
+
+.textlight {
+  color: #cdcccc;
+}
+
+h5 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 10px;
+  color: #292929;
+}
+
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 8px
+}
+
+a {
+  text-decoration: none;
+  color: #9a9191
+}
+

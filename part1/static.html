@@ -1,0 +1,23 @@
+<html ng-app="favouritLanguage">
+<head>
+  <title>Favourit Language</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>    
+  <script type="text/javascript" src="app.js"></script>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div ng-controller="LanguageController">
+  <h1>Enter a Github username:</h1>
+  <form>
+    Github Username: <input type="text" ng-model="username" /><br />
+    <button ng-click="find(username)">FIND</button>
+  </form>
+
+  <p>
+    {{ answer }}
+  </p>
+ 
+
+  </div>
+</body>
+</html>
