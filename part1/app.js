@@ -62,9 +62,9 @@ debugger
           if (favouritLanguages.length == 0) {
             $scope.answer = "This user does not have a favourite language"
           } else if (favouritLanguages.length == 1) {
-            $scope.answer = "This user's favourite language is: " + favouritLanguages.toString()      
+            $scope.answer = "This user's favourite language is:  " + favouritLanguages.toString()      
           } else {
-            $scope.answer = "This user's has more than one favourite languages!  And they are: " + favouritLanguages.toString()
+            $scope.answer = "This user has more than one favourite language! They are:  " + favouritLanguages.join(", ")
           }
 
 //  If the http call return's an error, I'm assuming that the user does not exist.  There obviously might be other reasons.  
