@@ -1,5 +1,5 @@
 (function() {  
-  var app = angular.module('favouritLanguage', []); 
+  var app = angular.module('favouriteLanguage', []); 
 
    app.controller('LanguageController' , ["$scope", "$http", function($scope, $http) {
 
@@ -54,15 +54,17 @@
               }        
           }
 
-//  Display a user's favourite language.  In some cases, a user might not have a favourite language at all so I accounted for that.    
-          if (favouritLanguages.length == 0) {
-            $scope.answer = "This user does not have a favourit language"
-          }
+//  Display a user's favourite language.  In some cases, a user might not have a favourite language at all so I accounted for that.  
 
-          if (favouritLanguages.length == 1) {
-            $scope.answer = "This user's favourit language is: " + favouritLanguages.toString()      
-          }else{
-            $scope.answer = "This user's has more than one favourit languages!  And they are: " + favouritLanguages.toString()
+debugger
+
+
+          if (favouritLanguages.length == 0) {
+            $scope.answer = "This user does not have a favourite language"
+          } else if (favouritLanguages.length == 1) {
+            $scope.answer = "This user's favourite language is: " + favouritLanguages.toString()      
+          } else {
+            $scope.answer = "This user's has more than one favourite languages!  And they are: " + favouritLanguages.toString()
           }
 
 //  If the http call return's an error, I'm assuming that the user does not exist.  There obviously might be other reasons.  
